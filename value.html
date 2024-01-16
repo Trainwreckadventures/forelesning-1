@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vi lærer om value</title>
+  </head>
+  <body>
+    <input type="text" id="name-txt" placeholder="ditt navn..." />
+    <input type="button" id="add-btn" value="legg til navn" />
+    <script>
+      const nameTxt = document.getElementById("name-txt");
+      const addBtn = document.getElementById("add-btn");
+
+      addBtn.onclick = showName;
+
+      function showName() {
+        const nameTxtValue = nameTxt.value;
+
+        alert(`Heisann ${nameTxtValue}`);
+      }
+    </script>
+  </body>
+</html>
